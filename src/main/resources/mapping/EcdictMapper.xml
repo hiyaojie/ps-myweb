@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.blog.mapper.EcdictMapper" >
+  <resultMap id="BaseResultMap" type="com.blog.model.Ecdict" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="word" property="word" jdbcType="VARCHAR" />
+    <result column="phonetic" property="phonetic" jdbcType="VARCHAR" />
+    <result column="definition" property="definition" jdbcType="VARCHAR" />
+    <result column="translation" property="translation" jdbcType="VARCHAR" />
+    <result column="pos" property="pos" jdbcType="VARCHAR" />
+    <result column="collins" property="collins" jdbcType="VARCHAR" />
+    <result column="oxford" property="oxford" jdbcType="VARCHAR" />
+    <result column="tag" property="tag" jdbcType="VARCHAR" />
+    <result column="bnc" property="bnc" jdbcType="VARCHAR" />
+    <result column="frq" property="frq" jdbcType="VARCHAR" />
+    <result column="exchange" property="exchange" jdbcType="VARCHAR" />
+    <result column="detail" property="detail" jdbcType="VARCHAR" />
+    <result column="audio" property="audio" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>
