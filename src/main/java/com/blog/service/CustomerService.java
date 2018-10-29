@@ -1,12 +1,9 @@
 package com.blog.service;
 
-import com.blog.dto.StudentGenderDto;
 import com.blog.exception.ErrorCode;
 import com.blog.exception.ServiceException;
 import com.blog.mapper.CustomerMapper;
-import com.blog.mapper.StudentMapper;
 import com.blog.model.Customer;
-import com.blog.model.Student;
 import com.blog.support.PageDto;
 import com.github.pagehelper.PageHelper;
 import org.apache.commons.lang3.StringUtils;
