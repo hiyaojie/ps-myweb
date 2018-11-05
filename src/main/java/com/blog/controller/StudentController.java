@@ -1,5 +1,6 @@
 package com.blog.controller;
 
+import com.blog.dto.Cource;
 import com.blog.dto.StudentGenderDto;
 import com.blog.model.Student;
 import com.blog.service.StudentService;
@@ -64,4 +65,11 @@ public class StudentController {
     public Student selectStudentById(@RequestParam long id) {
         return studentService.selectStudentById(id);
     }
+
+    @RequestMapping(value = "/test",method= RequestMethod.GET)
+    public List<Cource> test() {
+        return studentService.test();
+    }
+
+
 }

@@ -1,5 +1,6 @@
 package com.blog.service;
 
+import com.blog.dto.Cource;
 import com.blog.dto.StudentGenderDto;
 import com.blog.exception.ErrorCode;
 import com.blog.exception.ServiceException;
@@ -77,6 +78,11 @@ public class StudentService {
             throw new ServiceException(100,"无此数据");
         }
         return studentMapper.selectByPrimaryKey(id);
+    }
+
+
+    public List<Cource> test(){
+        return studentMapper.test();
     }
 
 

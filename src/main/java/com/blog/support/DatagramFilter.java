@@ -77,7 +77,7 @@ public class DatagramFilter extends OncePerRequestFilter {
         String areaCode = request.getHeader("AreaCode");
         String type = request.getHeader("Type");
         String token = request.getHeader("token");
-//        System.out.println(token);
+        System.out.println(token);
 //        String user = stringRedisTemplate.opsForValue().get(token);
 //        System.out.println(user);
 //        System.out.println(user);

@@ -1,5 +1,6 @@
 package com.blog.mapper;
 
+import com.blog.dto.Cource;
 import com.blog.dto.StudentGenderDto;
 import com.blog.model.Student;
 import com.blog.support.MyMapper;
@@ -29,6 +30,15 @@ public interface StudentMapper extends MyMapper<Student> {
     })
     @ResultType(StudentGenderDto.class)
     List<StudentGenderDto> staticGender();
+
+
+    @Select({"<script>",
+            "SELECT a.`cname`,a.`tid`\n" +
+                    "FROM course a"+
+                    "</script>"
+    })
+    @ResultType(Cource.class)
+    List<Cource> test();
 
 
 

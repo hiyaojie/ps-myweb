@@ -12,7 +12,9 @@ public interface CustomerMapper extends Mapper<Customer> {
 
     @Select({"<script>",
             "select * from customer\n" +
+                    "<when test=\"name!=''\">\n" +
                     "where `name` regexp #{name} \n"+
+                    "</when>"+
                     "</script>"
     })
     @ResultMap("BaseResultMap")
